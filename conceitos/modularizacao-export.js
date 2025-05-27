@@ -7,7 +7,7 @@
   ESM (module) - Ecmascript Standard Modules (> 2019)
     export {} / import 
 
- */
+  */
 // const nomePet = `Pitoco`
 // console.log(`O nome do pet é ${nomePet}`)
 
@@ -23,23 +23,24 @@ const BRINQUEDOS = [
     'Chocalho'
   ]
   
-  function exibirNomePet(paramNomePet = 'valor padrao') {
-  
-    if (paramNomePet === undefined) {
-      console.log()
-      return
+ function exibirNomePet(paramNomePet){
+    console.log(`O nome do pet é: ${paramNomePet}`);
+
+ }
+
+ function exibirIdade(paramIdadePet){
+    console.log(`Idade do pet é: ${paramIdadePet}`);
+
     }
-  
-    console.log(`O nome do pet é ${paramNomePet}`)
-  }
-  
-  function exibirIdade(paramIdadePet) {
-    console.log(`Idade do Pet é ${paramIdadePet}`)
-  }
-  
-  //  export {} / import 
-  export {
+    
+ exibirNomePet('Pipoca')
+ exibirNomePet('Pantera')
+ exibirNomePet('Peggy')
+ 
+ //export {} / import 
+ export {
     exibirNomePet,
     exibirIdade,
-    BRINQUEDOS
-  }
+    BRINQUEDOS,
+
+ } 
